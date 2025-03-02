@@ -18,7 +18,7 @@ const Navbar = () => {
             alt=""
           />
         </div>
-        <ListItems ClassName="lg:flex hidden"></ListItems>
+        <ListItems ClassName="lg:flex hidden items-center gap-5 "></ListItems>
 
         <Button
           ClassName="lg:flex hidden "
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className={`lg:hidden bg-white duration-500 ease-in-out `}>
           <ListItems
             ClassName="flex flex-col outline w-full "
-            ItemsClass="w-full text-center"
+            ItemsClass="w-full text-center p-2"
           ></ListItems>
           <Button
             ClassName="flex p-3  "

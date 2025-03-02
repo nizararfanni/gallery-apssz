@@ -1,33 +1,34 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ListItems = ({ ClassName, ItemsClass }) => {
   return (
-    <div className="flex items-center justify-center">
-      <ul className={` items-center gap-5 ${ClassName}`}>
+    <div className="flex ">
+      <ul className={` ${ClassName}`}>
         <li
-          className={`p-2 rounded-md   duration-300 ease-in-out hover:underline ${ItemsClass}`}
+          className={` rounded-md   duration-300 ease-in-out hover:underline ${ItemsClass}`}
         >
-          Home
+          <Link to={"/"}>home</Link>
         </li>
         <li
-          className={`  p-2 rounded-md  hover:underline   duration-300 ease-in-out ${ItemsClass}`}
+          className={`  rounded-md  hover:underline   duration-300 ease-in-out ${ItemsClass}`}
         >
-          Gallery
+          <Link to={"/gallery"}>gallery</Link>
         </li>
         <li
-          className={` p-2 rounded-md hover:underline   duration-300 ease-in-out ${ItemsClass}`}
+          className={`  rounded-md hover:underline   duration-300 ease-in-out ${ItemsClass}`}
         >
-          Collection
+          <Link to={"/gallery"}>collection</Link>
         </li>
         <li
-          className={`  p-2 rounded-md  hover:underline  duration-300 ease-in-out ${ItemsClass}`}
+          className={`  rounded-md  hover:underline  duration-300 ease-in-out ${ItemsClass}`}
         >
-          About
+          <Link to={"/gallery"}>about</Link>
         </li>
         <li
-          className={` p-2 rounded-md  hover:underline  duration-300 ease-in-out ${ItemsClass}`}
+          className={` rounded-md  hover:underline  duration-300 ease-in-out ${ItemsClass}`}
         >
-          contact
+          <Link to={"/gallery"}>gallery</Link>
         </li>
       </ul>
     </div>
