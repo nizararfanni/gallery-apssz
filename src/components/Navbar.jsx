@@ -9,12 +9,12 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="container bg-white mx-auto max-w-screen-lg font-serif lg-flex ">
+    <div className="container bg-white mx-auto max-w-screen-lg font-serif lg-flex p-6">
       <nav className="flex justify-between text-gray-700 font-bold  cursor-pointer">
         <div>
           <img
             className="lg:w-25 w-1/6 text-black"
-            src="/src/assets/loho-2.png"
+            src="/public/assets/loho-2.png"
             alt=""
           />
         </div>
