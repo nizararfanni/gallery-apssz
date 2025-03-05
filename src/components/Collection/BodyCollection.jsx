@@ -5,7 +5,7 @@ const BodyCollection = () => {
     const photos = [
       {
         id: 1,
-        src: "/src/assets/otaku.png",
+        src: "https://i.pinimg.com/564x/71/87/10/718710ca800cac1614c8b8fad032bda3.jpg",
         alt: "Image 1",
         description: "Description for Image 1",
       },
@@ -29,7 +29,7 @@ const BodyCollection = () => {
       },
       {
         id: 5,
-        src: "/src/assets/loho.jpeg",
+        src: "https://i.pinimg.com/736x/82/99/30/8299301f136fe21971ce5ccf794d26db.jpg",
         alt: "Image 5",
         description: "Description for Image 5",
       },
@@ -47,7 +47,7 @@ const BodyCollection = () => {
       },
       {
         id: 8,
-        src: "/src/assets/loho-2.png",
+        src: "https://i.pinimg.com/564x/e1/5c/44/e15c44e4c4cd5f83c237cc4ea90afb19.jpg",
         alt: "Image 6",
         description: "Description for Image 6",
       },
