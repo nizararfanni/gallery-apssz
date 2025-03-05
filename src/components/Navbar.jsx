@@ -13,8 +13,8 @@ const Navbar = () => {
       <nav className="flex justify-between text-gray-700 font-bold  cursor-pointer">
         <div>
           <img
-            className="lg:w-25 w-1/6 text-black"
-            src="/public/assets/loho-2.png"
+            className="lg:w-25 w-3/6 text-black rounded-lg" 
+            src="https://img.icons8.com/?size=100&id=4538&format=png&color=000000"
             alt=""
           />
         </div>
@@ -27,7 +27,11 @@ const Navbar = () => {
           Uploads Photos
         </Button>
         <button className="lg:hidden block mx-4" onClick={toggleMenu}>
-          <img src="/src/assets/hamburger.png" className="w-6" alt="" />
+          <img
+            src="https://img.icons8.com/?size=100&id=7613&format=png&color=000000"
+            className="w-6"
+            alt=""
+          />
         </button>
       </nav>
       {isOpen && (

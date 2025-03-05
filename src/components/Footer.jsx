@@ -7,8 +7,8 @@ const Footer = () => {
     <div className="flex mih-h-screen flex-col lg:flex-row bg-black justify-between text-white p-8 gap-4">
       <div className="lg:w-2/6 flex ">
         <img
-          className="lg:w-25 w-1/2 text-black"
-          src="/src/assets/loho-2.png"
+          className="lg:w-25 w-2/6 text-white bg-blue-500 rounded-lg"
+          src="https://img.icons8.com/?size=100&id=4538&format=png&color=000000"
           alt=""
         />
         <div className="flex lg:flex-col flex-row gap-4 items-center">
