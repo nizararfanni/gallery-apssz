@@ -11,7 +11,7 @@ const Footer = () => {
           src="/src/assets/loho-2.png"
           alt=""
         />
-        <div className="flex lg:flex-col flex-row gap-4">
+        <div className="flex lg:flex-col flex-row gap-4 items-center">
           <h1 className="font-bold text-white">Gallery Photos</h1>
           <p>share your moments with the world through stunning photography</p>
         </div>

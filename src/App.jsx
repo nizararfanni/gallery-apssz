@@ -2,21 +2,33 @@ import React, { useState } from "react";
 import ImagePage from "./pages/ImagePage";
 import Login from "./components/Forms/Login";
 import Navbar from "./components/Navbar";
-import { Routes, Route } from "react-router-dom";
-import Heades from "./components/Heades";
-import Home from "./pages/Home";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Home from "./pages/HomePage";
+import Collection from "./pages/CollectionPage";
+import ErrorPage from "./pages/ErrorPage";
+import ContactPage from "./pages/ContactPage";
+import UploadImage from "./pages/UploadImage";
 
 const App = () => {
-  // const [navbarIsOpen, setNavbarIsOpen] = useState(false);
+  const [navbarIsOpen, setNavbarIsOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <div>
-      <Navbar />
+      {/* condiitonal jika user bedarad pada path login/error navbar hilang */}
+      {location.pathname !== "/login" && location.pathname !== "*" && (
+        <Navbar />
+      )}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/gallery" element={<ImagePage />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/contact" element={<ContactPage />}/>
+        <Route path="/upload" element={<UploadImage />}/>
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );
