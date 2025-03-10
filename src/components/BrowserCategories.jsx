@@ -8,7 +8,7 @@ const BrowserCategories = () => {
       .then((res) => res.json())
       .then((result) => setData(result))
       .catch((err) => console.log(err));
-  });
+  },[]);
   return (
     <div className="mt-10 w-full mx-auto bg-gray-200 py-3">
       <h3 className="text-3xl font-bold text-gray-800 mb-4">

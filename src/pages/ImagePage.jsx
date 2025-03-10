@@ -1,42 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ImagePage = () => {
   const [expandedIndex, setExpandedIndex] = useState(0);
 
-  const panels = [
-    {
-      image:
-        "https://i.pinimg.com/564x/71/87/10/718710ca800cac1614c8b8fad032bda3.jpg",
-    },
-    {
-      image:
-        "https://i.pinimg.com/564x/e1/5c/44/e15c44e4c4cd5f83c237cc4ea90afb19.jpg",
-    },
-    {
-      image:
-        "https://i.pinimg.com/736x/52/85/cd/5285cd9f10f64a810dcc95152d046128.jpg",
-    },
-    {
-      image:
-        "https://i.pinimg.com/736x/82/99/30/8299301f136fe21971ce5ccf794d26db.jpg",
-    },
-    {
-      image:
-        "https://i.pinimg.com/736x/25/28/ef/2528ef445b249a3d56824b0c359b3f62.jpg",
-    },
-    {
-      image:
-        "https://i.pinimg.com/736x/42/db/53/42db53b44236879445b770bf61e365b1.jpg",
-    },
-    {
-      image:
-        "https://i.pinimg.com/736x/5b/0c/6a/5b0c6a9ae27f9b96e810d9410b29d9d3.jpg",
-    },
-    {
-      image:
-        "https://i.pinimg.com/736x/bd/99/76/bd9976c21f52db379fc4d35955c48712.jpg",
-    },
-  ];
+  const [panels, setPanels] = useState([]);
+
+  useEffect(() => {
+    fetch("/datas.json")
+      .then((res) => res.json())
+      .then((result) => setPanels(result))
+      .catch((err) => console.log(err));
+  }, []);
 
   const handleClick = (index) => {
     setExpandedIndex(index);
