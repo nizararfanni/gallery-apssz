@@ -8,6 +8,7 @@ import Collection from "./pages/CollectionPage";
 import ErrorPage from "./pages/ErrorPage";
 import ContactPage from "./pages/ContactPage";
 import UploadImage from "./pages/UploadImage";
+import DummyFile from "./components/DummyFile";
 
 const App = () => {
   const [navbarIsOpen, setNavbarIsOpen] = useState(false);
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/collection" element={<Collection />} />
         <Route path="/contact" element={<ContactPage />}/>
         <Route path="/upload" element={<UploadImage />}/>
+        <Route path="/dummy" element={<DummyFile />}/>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>

@@ -59,15 +59,15 @@ const ImagePage = () => {
               key={index}
               onClick={() => handleClick(index)}
               className={`
-              h-full rounded-2xl bg-white cursor-pointer
-              transition-all duration-500 ease-in-out overflow-hidden
-              ${
-                expandedIndex === index
-                  ? "w-[60%]"
-                  : "w-[10%] hover:bg-gray-200"
-              }
-              min-w-[40px] block
-            `}
+        h-full rounded-2xl bg-white cursor-pointer
+        transition-all duration-500 ease-in-out overflow-hidden
+        ${
+          expandedIndex === index
+            ? "w-[60%] sm:w-[80%]" // Mode Desktop 60%, Mobile 80%
+            : "w-[10%] sm:w-[20%] hover:bg-gray-200" // Mode Desktop 10%, Mobile 20%
+        }
+        min-w-[40px] block
+      `}
             >
               <img
                 src={panel.image}

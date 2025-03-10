@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "username": "manhwa",
+    "image": "./assets/boy2.png"
+  },
+  {
+    "id": 2,
+    "username": "games",
+    "image": "./assets/games.png"
+  },
+  {
+    "id": 3,
+    "username": "manga",
+    "image": "./assets/otaku.png"
+  },
+  {
+    "id": 4,
+    "username": "novel",
+    "image": "./assets/rawr.jpg"
+  }
+]
